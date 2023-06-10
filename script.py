@@ -99,7 +99,7 @@ def execution_log():
 variables = env_variables()
 
 configure_autorun()
-schedule.every().day.at("14:25").do(send_email)
+schedule.every().day.at("09:00").do(send_email)
 print("Successfully scheduled!")
 execution_log()
 while True:
